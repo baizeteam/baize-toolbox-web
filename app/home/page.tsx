@@ -66,7 +66,7 @@ export default async function Home() {
             </button>
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
-            {navigation.map((item) => (
+            {/* {navigation.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
@@ -74,7 +74,7 @@ export default async function Home() {
               >
                 {item.name}
               </a>
-            ))}
+            ))} */}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             {/* <div className="flex justify-end">
