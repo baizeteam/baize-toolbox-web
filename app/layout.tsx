@@ -16,7 +16,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <script async src="/iconfont.js"></script>
+      <head>
+        <meta name="baidu-site-verification" content="codeva-SXiQmQfy3Z" />
+        <script async src="/iconfont.js"></script>
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   );
