@@ -110,6 +110,7 @@ export default async function Home() {
             <h1
               style={{
                 backgroundClip: "text",
+                WebkitBackgroundClip: "text",
                 color: "transparent",
               }}
               className="text-4xl font-bold inline-block tracking-tight bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent sm:text-6xl"
