@@ -56,9 +56,9 @@ export default function AppGithubStatus(props) {
                   </p>
                 </div>
                 <div className="mt-1 flex items-center gap-x-2">
-                  <h3 className="text-xl sm:text-2xl font-medium text-gray-800 dark:text-neutral-200">
+                  <div className="text-xl sm:text-2xl font-medium text-gray-800 dark:text-neutral-200">
                     {item.value}
-                  </h3>
+                  </div>
                 </div>
               </div>
             </div>

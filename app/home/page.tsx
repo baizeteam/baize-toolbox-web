@@ -2,7 +2,7 @@ import { useState } from "react";
 import "@/styles/globals.css";
 import AppIcon from "@/components/AppIcon";
 import Image from "next/image";
-import AppLangSelect from "../components/AppLangSelect";
+// import AppLangSelect from "../components/AppLangSelect";
 import AppGithubStatus from "../components/AppGithubStatus";
 import AppDownload from "../components/AppDownload";
 
@@ -129,15 +129,6 @@ export default async function Home() {
                 查看更多版本 <span aria-hidden="true">→</span>
               </a>
             </div>
-            {/* <div>
-              {repoReleases?.[0]?.assets.map((item) => {
-                return (
-                  <a key={item.id} href={item?.browser_download_url} download>
-                    下载链接：{item.name}
-                  </a>
-                );
-              })}
-            </div> */}
           </div>
           <AppGithubStatus repoInfo={repoInfo} contributors={contributors} />
         </div>
