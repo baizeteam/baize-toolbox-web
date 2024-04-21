@@ -1,8 +1,6 @@
 import React from "react";
-import { timeFormat } from "@/utils/timeHelper";
-import { installIcon } from "@/utils/systemHelper";
-import AppIcon from "@/components/AppIcon";
 import ReleaseHeader from "../ReleaseHeader";
+import AssetItem from "../AssetItem";
 
 export default function ReleaseItem(props) {
   const { release } = props;
@@ -17,24 +15,9 @@ export default function ReleaseItem(props) {
       </p>
       <ul className="mt-7 space-y-2.5 text-sm">
         {release.assets.map((asset) => (
-          <RenderAssetItem key={asset.id} asset={asset} />
+          <AssetItem key={asset.id} asset={asset} />
         ))}
       </ul>
     </div>
-  );
-}
-
-function RenderAssetItem(props) {
-  const { asset } = props;
-  return (
-    <li className="flex items-center space-x-2 text-indigo-500 hover:text-indigo-600">
-      <AppIcon
-        className="text-lg"
-        icon={installIcon[asset.name.split(".").pop()]}
-      />
-      <a href={asset.browser_download_url} className="ml-2 ">
-        {asset.name}
-      </a>
-    </li>
   );
 }
