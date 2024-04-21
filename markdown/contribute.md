@@ -2,9 +2,9 @@
 
 主页地址：[https://baize.plume.vip](https://baize.plume.vip)
 
-下载地址：[https://github.com/sulgweb/baize-toolbox/releases](https://github.com/sulgweb/baize-toolbox/releases)
+下载地址：[https://github.com/baizeteam/baize-toolbox/releases](https://github.com/baizeteam/baize-toolbox/releases)
 
-github地址：[https://github.com/sulgweb/baize-toolbox](https://github.com/sulgweb/baize-toolbox)
+github地址：[https://github.com/baizeteam/baize-toolbox](https://github.com/baizeteam/baize-toolbox)
 
 # 一、通用规范
 
