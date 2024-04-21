@@ -10,17 +10,17 @@ github地址：[https://github.com/baizeteam/baize-toolbox](https://github.com/b
 
 ## vscode插件规范
 
-![img](https://xhmq1hae02.feishu.cn/space/api/box/stream/download/asynccode/?code=MDY4ZDZjMzJjMDQyNWQ1YjM5ZTUyNzY3Mjc0N2YzZjBfTUExQmNaMURSb0V4YmxYTVFVZURXbVRjSGdqeXVZakRfVG9rZW46THQ2b2JLa1RYb3MxZHl4NW1ld2NGcHhWbkhlXzE3MTM3MTU2NTU6MTcxMzcxOTI1NV9WNA)
+![img](/images/prettier.PNG)
 
-![img](https://xhmq1hae02.feishu.cn/space/api/box/stream/download/asynccode/?code=OGVkMjk4ODI2YjcxYjZkNWY4ZmY1NjRmOWMyMTQ0NjNfRmhxcXgwOVM5dzNJdHRiTUhCRVdLc29ZRDRHZlgzc0hfVG9rZW46RW1DR2JidjU3b3BGeEh4bExvUGNjN3JZbmhlXzE3MTM3MTU2NTU6MTcxMzcxOTI1NV9WNA)
+![img](/images/react.PNG)
 
-![img](https://xhmq1hae02.feishu.cn/space/api/box/stream/download/asynccode/?code=NzNhNWFiMTViYmE1MGVjZjdiMWFjNDc5OGMzZmVhYWNfbjNlNGR5UVZlN0FhQVpWVjlwbmFrdEZuUjAxbWo5VmJfVG9rZW46SEg0eWJ5eDE2b0pFbFF4VVhqbmNlRHUzbmRiXzE3MTM3MTU2NTU6MTcxMzcxOTI1NV9WNA)
+![img](/images/emoji.PNG)
 
 ## commit提交规范
 
 emoji + commit文案，如图
 
-![img](https://xhmq1hae02.feishu.cn/space/api/box/stream/download/asynccode/?code=ZWM1ZDc2MGIwOTI3MzkxMTc0NzkwYTU0NzUzNTdjOGFfUFR3SHZUMWkyOUs4dEVJVGdyUWttcENnczRUaWhvcnpfVG9rZW46UVM0eGJseWpjb0NsZmJ4eWdTZmM0aXBFbmdkXzE3MTM3MTU2NTU6MTcxMzcxOTI1NV9WNA)
+![img](/images/commit.PNG)
 
 ## pr规范
 
@@ -36,7 +36,7 @@ emoji + commit文案，如图
 - 预加载：主要是将部分electron、主线程的api注册给渲染进程使用（如非必须，目前基本够用）
 - 渲染进程：主要是前端相关页面的渲染
 
-![img](https://xhmq1hae02.feishu.cn/space/api/box/stream/download/asynccode/?code=NmViMGRiYTJiMTdiMDg5ODMyYTM2MzgwN2UwMjkxNDdfZmZ6dW8wdW9HNHNJWEFqVHl4V0c0SjUyb202R2NwbEZfVG9rZW46TVZPQ2JDaU44b0p6bEJ4QkJhN2N5ZFp2bkdmXzE3MTM3MTU2NTU6MTcxMzcxOTI1NV9WNA)
+![img](/images/structure.PNG)
 
 ### 主进程结构
 
@@ -63,7 +63,7 @@ ps：src/main/helper.ts本来想放入utils中，并命名为winHelper.ts，但�
 > - src/pages:站点下的页面
 > - src/router:站点下的路由
 
-![img](https://xhmq1hae02.feishu.cn/space/api/box/stream/download/asynccode/?code=NTNhNTIyNzQ2MDdkZWViZjI0NzUyNzlmMTczZjJiOGZfeW16UEFWeW52bjBzWkEzc2N2TzlmcTkwOTZlZkF6WHFfVG9rZW46R3IxSmJKM0p0b1B6WEt4cklPUWN6Rm1Ubk1kXzE3MTM3MTU2NTU6MTcxMzcxOTI1NV9WNA)
+![img](/images/renderer.PNG)
 
 ## 开发须知
 
@@ -82,7 +82,7 @@ ps：src/main/helper.ts本来想放入utils中，并命名为winHelper.ts，但�
 
 所有页面中文案相关的内容需要根据i18n规范，如果没有对应文案，则需要自己添加并完善所有语言包中对应的文案字段（只需要处理自己写的文案即可，antd默认文案已统一处理）。
 
-![img](https://xhmq1hae02.feishu.cn/space/api/box/stream/download/asynccode/?code=ZGZmNWFmZGMyZDk1NzlhZDgyNjQ4Njc3NmYxNGE5MjhfREFrb0xnelN4aE81QWF6MEh4N3pFN2RTbDdyYkg5Q1JfVG9rZW46UHd6UWJuNlkwb2t2Mml4M3BPZWNIeEdpbmpnXzE3MTM3MTU2NTU6MTcxMzcxOTI1NV9WNA)
+![img](/images/i18n.PNG)
 
 #### 组件开发规范
 
@@ -91,7 +91,9 @@ ps：src/main/helper.ts本来想放入utils中，并命名为winHelper.ts，但�
 - 组件拆分，在当前文件夹下新增components(如果是通用组件，则存放到公共组件处)，在components中新增对应的组件文件夹。
 - 组件内部规范：均使用函数式组件开发，原则上按props、useState、useRef、其他hooks、方法/函数/变量、useEffect的顺序，其中useCallback和useMemo两个hooks不进行限制，可自由发挥。
 
-![img](https://xhmq1hae02.feishu.cn/space/api/box/stream/download/asynccode/?code=MGI3NTBhOGRhZDZmNDQwYTg4NTEzZWExOTg0ODVkNThfTjZkajY0ZG5WbzZPWHdNbjY4YXdtaU5hZHNHSlBLWTdfVG9rZW46WjIwTmJNUEVSb0F6bUx4cW9KSWNFOVFvbnhkXzE3MTM3MTU2NTU6MTcxMzcxOTI1NV9WNA)![img](https://xhmq1hae02.feishu.cn/space/api/box/stream/download/asynccode/?code=Y2JiZjAwYTEyMGRmMTljNGVlMjViMTI4M2UzODAwNGNfdjNOY0xOMHpzeHROT0hQTThHd3J4eVNuUktmQVdVcFZfVG9rZW46U2l1RmJXYVJXbzVpQ3d4TUFrT2NyZ0VxblRiXzE3MTM3MTU2NTU6MTcxMzcxOTI1NV9WNA)
+![img](/images/component.PNG)
+
+![img](/images/order.PNG)
 
 # 三、生产规范
 
