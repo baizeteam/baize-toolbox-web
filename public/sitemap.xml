@@ -6,5 +6,11 @@
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
+    <url>
+        <loc>https://baize.plume.vip/version</loc>
+        <lastmod>2024-04-21</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
     <!-- Add more URLs as needed -->
 </urlset>
