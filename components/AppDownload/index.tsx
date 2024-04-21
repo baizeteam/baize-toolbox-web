@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import AppIcon from "@/app/components/AppIcon";
+import AppIcon from "@/components/AppIcon";
 
 const AppDownload = (props) => {
   const { repoReleases } = props;
