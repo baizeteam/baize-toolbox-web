@@ -1,4 +1,4 @@
-import AppIcon from "@/components/AppIcon";
+import AppIcon from "@/app/components/AppIcon";
 
 export default function AppGithubStatus(props) {
   const { repoInfo, contributors } = props;

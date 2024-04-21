@@ -1,17 +1,8 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "@/styles/globals.css";
-import AppIcon from "@/components/AppIcon";
-import Image from "next/image";
-// import AppLangSelect from "../components/AppLangSelect";
 import AppGithubStatus from "../components/AppGithubStatus";
 import AppDownload from "../components/AppDownload";
-
-const navigation = [
-  // { name: "Product", href: "/home" },
-  // { name: "Features", href: "#" },
-  // { name: "Marketplace", href: "#" },
-  // { name: "Company", href: "#" },
-];
+import AppHeader from "../components/AppHeader";
 
 export default async function Home() {
   async function init() {
@@ -39,58 +30,7 @@ export default async function Home() {
 
   return (
     <div className="bg-white">
-      <header className="absolute inset-x-0 top-0 z-50">
-        <nav
-          className="flex items-center justify-between p-6 lg:px-8"
-          aria-label="Global"
-        >
-          <div className="flex lg:flex-1">
-            <a href="/" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
-              <Image
-                width={48}
-                height={48}
-                className="h-12 w-auto rounded-lg"
-                src="/icon.ico"
-                alt=""
-              />
-            </a>
-          </div>
-          <div className="flex lg:hidden">
-            <button
-              type="button"
-              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
-            >
-              <span className="sr-only">Open main menu</span>
-              {/* <Bars3Icon className="h-6 w-6" aria-hidden="true" /> */}
-            </button>
-          </div>
-          <div className="hidden lg:flex lg:gap-x-12">
-            {/* {navigation.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className="text-sm font-semibold leading-6 text-gray-900"
-              >
-                {item.name}
-              </a>
-            ))} */}
-          </div>
-          <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            {/* <div className="flex justify-end">
-              <AppLangSelect />
-            </div> */}
-            <a
-              href="https://github.com/sulgweb/baize-toolbox"
-              className="text-sm font-semibold leading-6 text-gray-900 flex items-center"
-              target="_blank"
-            >
-              <AppIcon className="text-2xl mr-2" icon="#icon-github-fill" />
-              <div>Github</div>
-            </a>
-          </div>
-        </nav>
-      </header>
+      <AppHeader />
 
       <div className="relative isolate px-6 pt-14 lg:px-8">
         <div
