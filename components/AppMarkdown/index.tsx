@@ -19,7 +19,11 @@ export default function AppMarkdown({ markdownContent }) {
             <img src={src} alt={alt} className="mb-2 rounded-lg" />
           ),
           a: ({ href, children }) => (
-            <a href={href} className="text-indigo-500 hover:underline">
+            <a
+              href={href}
+              className="text-indigo-500 hover:underline"
+              target="_blank"
+            >
               {children}
             </a>
           ),
