@@ -1,8 +1,7 @@
-import { useEffect, useState } from "react";
 import "@/styles/globals.css";
-import AppGithubStatus from "../components/AppGithubStatus";
-import AppDownload from "../components/AppDownload";
-import AppHeader from "../components/AppHeader";
+import AppGithubStatus from "@/components/AppGithubStatus";
+import AppDownload from "@/components/AppDownload";
+import AppHeader from "@/components/AppHeader";
 
 export default async function Home() {
   async function init() {
