@@ -22,7 +22,7 @@ export default async function Home() {
 
   return (
     <AppBase>
-      <div className="relative isolate">
+      <div className="z-20 relative isolate">
         <div className="mx-auto max-w-2xl pt-4 lg:pt-32">
           <div className="text-center">
             <h1
