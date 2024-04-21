@@ -2,17 +2,13 @@ import React from "react";
 import { timeFormat } from "@/utils/timeHelper";
 import { installIcon } from "@/utils/systemHelper";
 import AppIcon from "@/components/AppIcon";
+import ReleaseHeader from "../ReleaseHeader";
 
 export default function ReleaseItem(props) {
   const { release } = props;
   return (
     <div className="z-20 flex flex-col border border-gray-300 text-left rounded-xl p-8 dark:border-neutral-800 w-full mb-12  last-of-type:mb-0">
-      <h4 className="font-medium text-lg flex items-center text-gray-800 dark:text-neutral-200">
-        <div className=" bg-indigo-200 text-indigo-500 rounded py-1 px-2 mr-2 text-xs">
-          {release.prerelease ? "Pre-release" : "Release"}
-        </div>
-        {timeFormat(release.created_at)}
-      </h4>
+      <ReleaseHeader />
       <h4 className="mt-6 font-bold text-4xl text-gray-800 dark:text-neutral-200">
         {release.tag_name}
       </h4>
