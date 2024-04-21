@@ -9,7 +9,7 @@ const navigation = [
 ];
 
 export default function AppNavgation() {
-  const [curTab, setCurTab] = useState("home");
+  const [curTab, setCurTab] = useState("");
 
   useEffect(() => {
     const tab = window.location.pathname.slice(1) || "home";
