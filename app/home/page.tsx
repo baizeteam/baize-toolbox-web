@@ -2,17 +2,10 @@ import "@/styles/globals.css";
 import AppGithubStatus from "@/components/AppGithubStatus";
 import AppDownload from "@/components/AppDownload";
 import AppHeader from "@/components/AppHeader";
+import { repoUrl, baseParams } from "@/utils/githubHelper";
 
 export default async function Home() {
   async function init() {
-    const repoUrl = `https://api.github.com/repos/${process.env.GITHUB_OWNER}/${process.env.GITHUB_REPO}`;
-    const baseParams = {
-      next: { revalidate: 600 },
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `token ${process.env.GITHUB_TOKEN as string}`,
-      },
-    };
     const [repoInfoRes, repoReleasesRes, contributorsRes] = await Promise.all([
       fetch(repoUrl, baseParams),
       fetch(`${repoUrl}/releases`, baseParams),
