@@ -10,17 +10,17 @@ github地址：[https://github.com/baizeteam/baize-toolbox](https://github.com/b
 
 ## vscode插件规范
 
-![img](/images/prettier.PNG)
+![prettier.PNG](https://s2.loli.net/2024/04/22/lbmCw71Zh4E5eKY.png)
 
-![img](/images/react.PNG)
+![react.PNG](https://s2.loli.net/2024/04/22/tIGc2U5wMnjFeJW.png)
 
-![img](/images/emoji.PNG)
+![emoji.PNG](https://s2.loli.net/2024/04/22/Z2XUlfbjC91oBRm.png)
 
 ## commit提交规范
 
 emoji + commit文案，如图
 
-![img](/images/commit.PNG)
+![commit.PNG](https://s2.loli.net/2024/04/22/f1T3beJqtBMS8YQ.png)
 
 ## pr规范
 
@@ -36,7 +36,7 @@ emoji + commit文案，如图
 - 预加载：主要是将部分electron、主线程的api注册给渲染进程使用（如非必须，目前基本够用）
 - 渲染进程：主要是前端相关页面的渲染
 
-![img](/images/structure.PNG)
+![structure.PNG](https://s2.loli.net/2024/04/22/AKpfVebqvYWwTxD.png)
 
 ### 主进程结构
 
@@ -63,7 +63,7 @@ ps：src/main/helper.ts本来想放入utils中，并命名为winHelper.ts，但�
 > - src/pages:站点下的页面
 > - src/router:站点下的路由
 
-![img](/images/renderer.PNG)
+![renderer.png](https://s2.loli.net/2024/04/22/MOmL2qUegArxdiF.png)
 
 ## 开发须知
 
@@ -82,7 +82,7 @@ ps：src/main/helper.ts本来想放入utils中，并命名为winHelper.ts，但�
 
 所有页面中文案相关的内容需要根据i18n规范，如果没有对应文案，则需要自己添加并完善所有语言包中对应的文案字段（只需要处理自己写的文案即可，antd默认文案已统一处理）。
 
-![img](/images/i18n.PNG)
+![i18n.png](https://s2.loli.net/2024/04/22/rCWquxe5T7E1ONf.png)
 
 #### 组件开发规范
 
@@ -91,9 +91,9 @@ ps：src/main/helper.ts本来想放入utils中，并命名为winHelper.ts，但�
 - 组件拆分，在当前文件夹下新增components(如果是通用组件，则存放到公共组件处)，在components中新增对应的组件文件夹。
 - 组件内部规范：均使用函数式组件开发，原则上按props、useState、useRef、其他hooks、方法/函数/变量、useEffect的顺序，其中useCallback和useMemo两个hooks不进行限制，可自由发挥。
 
-![img](/images/component.PNG)
+![component.png](https://s2.loli.net/2024/04/22/83ftjaQSJsZ27bl.png)
 
-![img](/images/order.PNG)
+![order.png](https://s2.loli.net/2024/04/22/7yiVrInW1gUHuYo.png)
 
 # 三、生产规范
 
