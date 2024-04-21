@@ -1,8 +1,7 @@
 import React from "react";
-import AppHeader from "@/components/AppHeader";
-import AppBg from "@/components/AppBg";
 import ReleaseList from "./components/ReleaseList";
 import { repoUrl, baseParams } from "@/utils/githubHelper";
+import AppBase from "@/components/AppBase";
 
 export default async function Version() {
   const init = async () => {
@@ -12,10 +11,8 @@ export default async function Version() {
   };
   const releases = await init();
   return (
-    <main className="grid min-h-full place-items-center bg-white px-6 py-24 sm:py-32 lg:px-8">
-      <AppHeader />
-      <AppBg />
+    <AppBase>
       <ReleaseList releases={releases} />
-    </main>
+    </AppBase>
   );
 }

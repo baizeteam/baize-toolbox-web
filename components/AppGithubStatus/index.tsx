@@ -20,7 +20,7 @@ export default function AppGithubStatus(props) {
     },
   ];
   return (
-    <div className="max-w-[100rem] py-12  lg:py-24 mx-auto">
+    <div className="max-w-[100rem] pt-12 lg:pt-20 mx-auto">
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8">
         {options.map((item, index) => (
           <div
