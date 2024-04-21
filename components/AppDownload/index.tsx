@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import AppIcon from "@/components/AppIcon";
+import { getOs, osData } from "@/utils/systemHelper";
 
 const AppDownload = (props) => {
   const { repoReleases } = props;
@@ -11,41 +12,6 @@ const AppDownload = (props) => {
   const [downloadUrl, setDownloadUrl] = useState("");
 
   useEffect(() => {
-    function getOs() {
-      if (typeof window !== "undefined") {
-        const userAgent = window.navigator.userAgent;
-        if (userAgent.indexOf("Win") !== -1) {
-          return "windows";
-        } else if (userAgent.indexOf("Mac") !== -1) {
-          return "mac";
-        } else if (userAgent.indexOf("Linux") !== -1) {
-          return "linux";
-        } else {
-          return "unknown";
-        }
-      }
-      return "unknown";
-    }
-
-    const osData = {
-      windows: {
-        icon: "#icon-windows",
-        downType: "exe",
-      },
-      mac: {
-        icon: "#icon-mac",
-        downType: "dmg",
-      },
-      linux: {
-        icon: "#icon-linux",
-        downType: "deb",
-      },
-      unknown: {
-        icon: "#icon-file-unknown",
-        downType: null,
-      },
-    };
-
     const curOs = getOs();
     const curOsData = osData[curOs];
     const downloadAssets = repoReleases?.[0].assets.find(

@@ -37,7 +37,7 @@ export default async function Home() {
             }}
           />
         </div>
-        <div className="mx-auto max-w-2xl pt-32">
+        <div className="mx-auto max-w-2xl pt-36">
           <div className="text-center">
             <h1
               style={{
@@ -55,7 +55,7 @@ export default async function Home() {
             <div className="mt-16 flex items-center justify-center gap-x-6">
               <AppDownload repoReleases={repoReleases} />
               <a
-                href="https://github.com/sulgweb/baize-toolbox/releases"
+                href="/version"
                 className="text-sm font-semibold leading-6 text-gray-400 hover:text-gray-600"
               >
                 查看更多版本 <span aria-hidden="true">→</span>

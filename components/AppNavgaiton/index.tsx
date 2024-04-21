@@ -10,11 +10,9 @@ const navigation = [
 
 export default function AppNavgation() {
   const [curTab, setCurTab] = useState("home");
-  console.log(curTab);
 
   useEffect(() => {
     const tab = window.location.pathname.slice(1) || "home";
-    console.log(window.location);
     setCurTab(tab);
   }, []);
   return (
