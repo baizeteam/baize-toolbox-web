@@ -8,7 +8,7 @@ export default function AppBase(props) {
     <main className="grid min-h-full place-items-center bg-white px-6 pt-24 pb-12 sm:pt-28 lg:px-8">
       <AppHeader />
       <AppBg />
-      {children}
+      <div className="z-20 w-full">{children}</div>
     </main>
   );
 }
