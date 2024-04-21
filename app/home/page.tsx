@@ -3,6 +3,7 @@ import AppGithubStatus from "@/components/AppGithubStatus";
 import AppDownload from "@/components/AppDownload";
 import AppBase from "@/components/AppBase";
 import { repoUrl, baseParams } from "@/utils/githubHelper";
+import { projectInfo } from "@/utils/textHelper";
 
 export default async function Home() {
   async function init() {
@@ -33,10 +34,10 @@ export default async function Home() {
               }}
               className="text-4xl font-bold inline-block tracking-tight bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent sm:text-6xl"
             >
-              白泽工具箱
+              {projectInfo.title}
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600 indent-10 text-left">
-              白泽工具箱是一款功能强大的多媒体处理工具，可以帮助用户在不同的多媒体格式之间进行快速、高效的转换。无论是图片、音频还是视频，这个工具都能轻松搞定，让用户在处理多媒体文件时更加方便快捷。
+              {projectInfo.description}
             </p>
             <div className="mt-16 flex items-center justify-center gap-x-6">
               <AppDownload repoReleases={repoReleases} />
