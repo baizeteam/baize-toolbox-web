@@ -4,11 +4,17 @@
         <loc>https://baize.plume.vip</loc>
         <lastmod>2024-04-19</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
+        <priority>1</priority>
     </url>
     <url>
         <loc>https://baize.plume.vip/version</loc>
         <lastmod>2024-04-21</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://baize.plume.vip/contribute</loc>
+        <lastmod>2024-04-22</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
