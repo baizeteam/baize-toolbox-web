@@ -24,7 +24,21 @@ emoji + commit文案，如图
 
 ## pr规范
 
-待补充。。。
+开发前，先fork一个仓库到自己的个人仓库中，然后从个人仓库中进行拉取代码并创建一个新的分支进行开发。
+
+![image.png](https://s2.loli.net/2024/04/28/DM9qEHIV7PWNK2S.png)
+
+
+
+然后先把代码提交到到自己的仓库中，在自己的仓库中`New pull request`。选择好对应的分支后，创建pr(`Create pull request`)，并添加相关的描述和截图（如果有的话）。接下来，管理员会对你的代码进行code review。完成code review后，管理员把代码合并进入主仓库，你即可成为仓库的贡献者。
+
+![image.png](https://s2.loli.net/2024/04/28/vOUYpzBI2Abtn1T.png)
+
+![image.png](https://s2.loli.net/2024/04/28/7ErBqpOSQU9godN.png)
+
+![image.png](https://s2.loli.net/2024/04/28/l4AGPUicQSjD2kO.png)
+
+
 
 # 二、代码规范
 
@@ -112,3 +126,12 @@ release版本：需要修复所有已知错误和异常，如无法修复需要�
 ## 发布规范
 
 每个release版本都需要完成win、mac、linux系统的安装包打包，并且在发布前需要在git添加对应版本的tag。
+
+
+
+# 四、加入白泽团队
+
+以下两点完成其一即可联系管理员，申请加入团队，管理员在评估审核通过后即可加入：
+
+- 完成5次优化 或者 bug类型pr（文案类不算）。
+- 参与功能模块的独立开发。
