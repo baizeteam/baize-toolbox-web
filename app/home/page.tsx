@@ -34,10 +34,10 @@ export default async function Home() {
               }}
               className="text-4xl font-bold inline-block tracking-tight bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent sm:text-6xl"
             >
-              {projectInfo.title}
+              {projectInfo?.title}
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600 indent-10 text-left">
-              {projectInfo.description}
+              {projectInfo?.description}
             </p>
             <div className="mt-16 flex items-center justify-center gap-x-6">
               <AppDownload repoReleases={repoReleases} />
