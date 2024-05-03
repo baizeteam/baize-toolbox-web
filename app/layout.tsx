@@ -10,6 +10,9 @@ export const metadata: Metadata = {
   description: projectInfo.description,
   keywords: projectInfo.keywords,
   robots: projectInfo.robots,
+  other: {
+    "baidu-site-verification": projectInfo["baidu-site-verification"],
+  },
 };
 
 export default function RootLayout({
@@ -20,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <meta name="baidu-site-verification" content="codeva-SXiQmQfy3Z" />
+        {/* <meta name="baidu-site-verification" content="codeva-SXiQmQfy3Z" /> */}
         <script async src="/iconfont.js"></script>
       </head>
       <body className={inter.className}>{children}</body>
