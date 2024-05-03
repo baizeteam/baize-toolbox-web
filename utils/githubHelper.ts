@@ -1,8 +1,17 @@
 export const repoUrl = `https://api.github.com/repos/${process.env.GITHUB_OWNER}/${process.env.GITHUB_REPO}`;
-export const baseParams = {
-  // next: { revalidate: 600 },
+
+type baseParamsType = {
+  next?: any;
+  headers: {
+    [key: string]: string
+  }
+}
+export const baseParams: baseParamsType = {
+  next: { cache: 'no-store' },
   headers: {
     "Content-Type": "application/json",
-    Authorization: `token ${process.env.GITHUB_TOKEN as string}`,
   },
 };
+if(process.env.GITHUB_TOKEN){
+  baseParams.headers.Authorization =  `token ${process.env.GITHUB_TOKEN as string}`
+}
