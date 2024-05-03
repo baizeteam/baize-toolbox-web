@@ -8,6 +8,8 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: projectInfo.title,
   description: projectInfo.description,
+  keywords: projectInfo.keywords,
+  robots: projectInfo.robots,
 };
 
 export default function RootLayout({
