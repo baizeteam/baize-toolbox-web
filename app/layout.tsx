@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   keywords: projectInfo.keywords,
   robots: projectInfo.robots,
   other: {
-    "baidu-site-verification": projectInfo["baidu-site-verification"],
+    "baidu-site-verification": projectInfo.baiduSiteVerification,
   },
 };
 
