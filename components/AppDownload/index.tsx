@@ -14,7 +14,7 @@ const AppDownload = (props) => {
   useEffect(() => {
     const curOs = getOs();
     const curOsData = osData[curOs];
-    const downloadAssets = repoReleases?.[0].assets.find(
+    const downloadAssets = repoReleases?.[0]?.assets.find(
       (item) => item.name.indexOf(curOsData.downType) > -1,
     );
     setDownloadUrl(downloadAssets?.browser_download_url || "");
