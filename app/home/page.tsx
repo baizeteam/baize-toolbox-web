@@ -5,6 +5,8 @@ import AppBase from "@/components/AppBase";
 import { repoUrl, baseParams } from "@/utils/githubHelper";
 import { projectInfo } from "@/utils/textHelper";
 
+export const dynamic = "force-dynamic";
+
 export default async function Home() {
   async function init() {
     const [repoInfoRes, repoReleasesRes, contributorsRes] = await Promise.all([
@@ -20,6 +22,8 @@ export default async function Home() {
   }
 
   const { repoInfo, repoReleases, contributors } = await init();
+
+  console.log(repoReleases);
 
   return (
     <AppBase>
